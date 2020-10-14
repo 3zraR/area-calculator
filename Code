@@ -1,44 +1,67 @@
+def logo():
+    print("   _____          _      _____ _    _ _            _______ ______            _____  ______ ")         
+    print("  / ____|   /\   | |    / ____| |  | | |        /\|__   __|  ____|     /\   |  __ \|  ____|   /\    ")
+    print(" | |       /  \  | |   | |    | |  | | |       /  \  | |  | |__       /  \  | |__) | |__     /  \   ")
+    print(" | |      / /\ \ | |   | |    | |  | | |      / /\ \ | |  |  __|     / /\ \ |  _  /|  __|   / /\ \  ")
+    print(" | |____ / ____ \| |___| |____| |__| | |____ / ____ \| |  | |____   / ____ \| | \ \| |____ / ____ \ ")
+    print("  \_____/_/    \_\______\_____|\____/|______/_/    \_\_|  |______| /_/    \_\_|  \_\______/_/    \_\ \n")
+ 
 def triangle():    
-    height = int(input('enter the height of a triangle:'))
+
+    height = int(input('enter the height of your triangle:'))
+
     base = int(input('enter the base of your triangle:'))
 
     area = height * base /2
     
-    print('the area of your triangle is', area)
+    print('the area of your tirangle is', area)
 
-triangle()
 
 def square():
+
     side = int(input('enter the side of the square:'))
 
     area = side * side
 
     print('the area of the side is:',area)
 
-square()
 
 def rectangle():
 
-    length = int(input('enter the length of the rectangle:'))
+    lenght = int(input('enter the lenght of the rectangle:'))
 
     width = int(input('enter the width of the rectangle:'))
 
-    area = length * width
+    area = lenght * width
 
     print('the area of the rectangle is', area )
 
-rectangle()
 
 def circle():
+
     pi = 3.14
 
     radius = int(input('enter the radius of the circle:'))
 
     area = pi * radius **2
 
-    print ('the area of the circle is', area)
+    print ('the area of teh circe is', area)
 
-circle ()
+def Menu():
+    logo()
+    userchoice = input("what Area would you like to find? \nSquare(s) \nCircle(c) \nRectangle(r) \nTriangle(t) \n")
+    if userchoice == 's':
+        square()
+    elif userchoice == 'c':
+        circle()
+    elif userchoice == 'r':
+        rectangle()
+    elif userchoice == 't':
+        triangle()
+    else:
+        print("Invalid try again.")
+
+Menu()
 
 #                                 _______
 #                           _,,ad8888888888bba,_
