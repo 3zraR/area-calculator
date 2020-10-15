@@ -60,6 +60,7 @@ def Menu():
         triangle()
     else:
         print("Invalid try again.")
+        Menu()
 
 Menu()
 
